@@ -1,0 +1,131 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-image: url(login-img/sc2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+/* Form Title */
+
+.login-wrap h3 {
+  color: black;
+  font-family: "Lato", sans-serif;
+  font-weight: 500;
+  font-size: 1.75rem;
+  line-height: 1.5;
+  text-shadow: -2px 4px 6px rgba(128, 128, 128, 0.5);
+}
+
+/* Form Input */
+
+.form-control {
+  height: 50px;
+  color: black !important;
+  border: 1px solid transparent;
+  background: rgba(255, 255, 255, 0.459);
+  border-radius: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-shadow: 1.5px 1.5px 2px grey;
+  margin: 15px 0;
+  /* box-shadow: -15px 17px 42px -21px rgba(0, 0, 0, 0.68);
+  -webkit-box-shadow: -15px 17px 42px -21px rgba(0, 0, 0, 0.68);
+  -moz-box-shadow: -15px 17px 42px -21px rgba(0, 0, 0, 0.68); */
+}
+
+.input-field-login:hover {
+  background: rgba(255, 255, 255, 0.541);
+}
+
+.input-field-login:focus {
+  background: rgba(255, 255, 255, 0.541);
+  box-shadow: none;
+  border: 1px solid transparent;
+}
+
+.input-field-login::placeholder {
+  color: black;
+
+  opacity: 1;
+}
+
+.input-field-login::-ms-input-placeholder {
+  color: black;
+}
+
+.login-wrap {
+  position: relative;
+}
+
+.field-icon {
+  position: absolute;
+  /* top: 44.5%; */
+  top: 143px;
+  right: 5%;
+  /* color: rgba(255, 255, 255, 0.9); */
+  color: black;
+}
+
+/* Button */
+
+.submit-button {
+  background: #025ebc !important;
+  border: 1px solid #025ebc !important;
+  color: white !important;
+  text-transform: uppercase;
+  text-shadow: none;
+  font-size: 15px;
+}
+
+.submit-button:hover {
+  background: #024383 !important;
+  border: 1px solid #024383 !important;
+}
+
+/* Form Footer */
+
+.form-check {
+  font-family: "Lato", sans-serif;
+}
+
+.checkmark-login {
+  color: black;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+input[type="checkbox"]:checked {
+  background: #024383;
+  border: 3px solid #024383;
+  display: block;
+  color: #024383;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 0 1%;
+  }
+}
